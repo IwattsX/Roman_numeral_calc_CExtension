@@ -21,6 +21,11 @@ def main():
 
     numeric_equation = _roman.convert("".join(args.equation))
     print("Converted to \"%s\"" % numeric_equation)
+
+    final_num = _roman.solve(numeric_equation)
+    print("The solved equation = %d" % final_num)
+
+    print("Roman numeral is %s" % _roman.int_to_roman(final_num))
     
 
 if __name__ == '__main__':
